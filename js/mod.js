@@ -8,6 +8,8 @@ let modInfo = {
 	discordLink: "",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
 	offlineLimit: 1,  // In hours
+
+	allowSmall: true,
 }
 
 // Set your version in num and name
@@ -42,6 +44,7 @@ function getPointGen() {
 		return new Decimal(0)
 
 	let gain = new Decimal(1)
+	if(hasUpgrade('p',11)) gain=gain.times(2)
 	return gain
 }
 
@@ -76,3 +79,6 @@ function maxTickLength() {
 // you can cap their current resources with this.
 function fixOldSave(oldVersion){
 }
+
+//fast definition
+function n(x){return new Decimal(x)}

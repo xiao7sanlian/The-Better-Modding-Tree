@@ -1,5 +1,13 @@
 # The Modding Tree changelog:
 
+### v2.7.0.1 = 7/23/26
+- Uncompleted achievements are shown now.
+- allowSmall is added to the modInfo, deciding whether numbers less than 0.0001 can be represented by Scientific notation.
+- Fixed a issue with passiveGeneration() when it goes beyond 1.79e308.
+- Added more starting contents.
+- Added n() as an abbreviation for new Decimal().
+- Added Vue.js.
+
 ### v2.6.6.2 = 9/9/21
 - nodeStyle can now be used to set fonts.
 
