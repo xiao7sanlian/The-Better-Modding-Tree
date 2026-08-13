@@ -65,7 +65,7 @@ addLayer("a", {
     achievements: {
     11: {
         name: "Point Master",
-        tooltip(){a='Reach 100 points.<br>Reward: Unlock    .'
+        tooltip(){a='Reach 100 points.<br>Reward: Unlock nothing.'
             return a
         },
         done(){return player.points.gte(100)},

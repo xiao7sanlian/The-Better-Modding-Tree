@@ -1,6 +1,12 @@
 # The Modding Tree changelog:
 
-### v2.7.0.1 = 7/23/26
+## v2.7.0.2 = 8/13/26
+- Added grantMilestone() and grantAchievement() by loader3229.
+- Added milestoneEffect().
+- Revamped formatTime() to support number greater than 1.8e308. (also added formatTimeR() with same function)
+- Fixed the game can't run.
+
+# v2.7.0.1 = 7/23/26
 - Uncompleted achievements are shown now.
 - allowSmall is added to the modInfo, deciding whether numbers less than 0.0001 can be represented by Scientific notation.
 - Fixed a issue with passiveGeneration() when it goes beyond 1.79e308.
